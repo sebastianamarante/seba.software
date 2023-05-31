@@ -1,0 +1,111 @@
+.iphone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    transform: rotate(45deg);
+    background-color: #d8d8d8;
+    z-index: -1;
+  }
+  
+  .process-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+  }
+  
+  .process-step:last-child {
+    margin-right: 0;
+  }
+  
+  .card {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(45deg, #233D4D, #007EA7);
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card-icon {
+    color: #ffffff;
+    font-size: 32px;
+  }
+  
+  .arrow-container {
+    position: relative;
+    margin-top: -7vh;
+    margin-left: 20vh;
+  }
+
+  .arrow-container-second {
+    position: relative;
+    margin-top: -7vh;
+    margin-left: -36vh;
+  }
+  .arrow-container::before {
+    content: "";
+    position:absolute;
+    top: 50%;
+    left: -10px;
+    height: 3px;
+    width: 10vh;
+    background-color: rgba(255, 204, 0, 0.8);
+  }
+  
+  .arrow-container::after {
+    margin-top: -0.5vh;
+    content: "";
+    position: absolute;
+    left: 10vh;
+    height: 1.4vh;
+    width: 1.4vh;
+    border-radius: 10vh;
+    transform: translateY(-50%) rotate(deg);
+    background-color: rgba(255, 204, 0, 0.8);
+  }
+
+  .arrow-container-second::before {
+    content: "";
+    position:absolute;
+    top: 50%;
+    left: -10px;
+    height: 3px;
+    width: 10vh;
+    background-color: rgba(255, 204, 0, 0.8);
+  }
+  
+  .arrow-container-second::after {
+    margin-top: -0.5vh;
+    content: "";
+    position: absolute;
+    right: 2vh;
+    height: 1.4vh;
+    width: 1.4vh;
+    border-radius: 10vh;
+    transform: translateY(-50%) rotate(deg);
+    background-color: rgba(255, 204, 0, 0.8);
+  }
+  
+  
+  .description {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10vh;
+    color: rgba(97, 155, 138, 0.8);
+    text-transform: uppercase;
+  }

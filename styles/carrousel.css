@@ -1,0 +1,26 @@
+.section-carrousel {
+    height: 30vh;
+    background-color: #619B8A;
+    background-image: radial-gradient(circle at center, #9BC7B1, #619B8A,);}
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .carousel-item {
+    margin: 0 20px;
+  }
+  
+  .slick-slide {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slick-active {
+    transform: scale(1.2);
+  }
+  
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }

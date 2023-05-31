@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+    height: 50%;
+    background: #FFFFFF;
+  }
+
+  .highlight-section {
+    background: linear-gradient(to right, #FE7F2D, #FE7F2D) no-repeat;
+    background-size: 100% 10px;
+    background-position: 0 80%;
+    padding-bottom: 5px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #777777;
+    max-width: 50vh;
+  }
