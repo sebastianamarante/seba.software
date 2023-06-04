@@ -6,17 +6,25 @@ section {
   
   .statistics {
     display: flex;
-    justify-content: space-around;
+    overflow-x: auto; /* Agrega esto para hacer el contenido desplazable en el eje x */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
   }
   
   .statistic {
+    flex: 0 0 auto; /* Cambia esto para evitar que los elementos se encogen */
     flex-basis: 20%;
     padding: 20px;
     background: linear-gradient(to bottom, #fff, rgba(230, 243, 236, 0.3));
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    margin-right: 20px; /* Agrega esto para dar un poco de espacio entre los elementos */
   }
+
+  .statistics::-webkit-scrollbar { /* Chrome, Safari and Opera */
+    display: none;
+}
   
   h3 {
     font-size: 36px;

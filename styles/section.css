@@ -19,3 +19,10 @@
     color: #777777;
     max-width: 50vh;
   }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 2vh;
+      width: 100%;
+  }
+  }
