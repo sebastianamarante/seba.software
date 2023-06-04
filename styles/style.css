@@ -150,21 +150,21 @@ p {
   }
 
   .inner-header {
-    flex-direction: column;  /* Cambia la dirección del flex a columna */
-    align-items: center;  /* Centra los elementos en el eje horizontal */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .logo-container {
-    padding-left: 0;  /* Elimina el padding izquierdo */
-    padding-bottom: 0;  /* Añade padding abajo para crear espacio entre el logo y el archivo Lottie */
+    padding-left: 0;  
+    padding-bottom: 0;  
   }
 
   .logo {
-    width: 40px;  /* Reduce el tamaño del logo */
+    width: 40px; 
   }
 
   .lottie-container {
-    padding-right: 28vh;  /* Elimina el padding izquierdo */
+    padding-right: 28vh;  
   }
 
 }
