@@ -1,7 +1,9 @@
-body {
-  margin:0;
-  padding: 0px;
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
+
 .dot {
     font-size: 0.6em; /* Tamaño del punto */
     color: yellow; /* Color amarillo */
@@ -10,10 +12,15 @@ body {
     margin: 0 1vh; /* Espacio entre las palabras */
   }
 
+.lottie-player {
+  width: 100%; 
+  height: 100%; 
+  padding-left: 30vh; 
+}
+  
   .highlight {
     color: yellow;
   }
-/*  #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*/
 /* Estilos del body */
 .section {
     height: 500px;
@@ -98,43 +105,6 @@ p {
   padding: 20px;
 }
 
-/* Estilo del footer */
-footer {
-  background-color: #132322;
-  color: #FFFFFF;
-  padding: 20px;
-}
-
-/* Estilo del enlace en el footer */
-footer a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-/* Estilo del enlace resaltado en el footer */
-footer a.highlight {
-  color: #FE7F2D;
-}
-
-/* Estilo del texto resaltado en el footer */
-footer .highlight-text {
-  color: #FE7F2D;
-}
-
-/* Estilo del botón en el footer */
-footer button {
-  background-color: #FE7F2D;
-  color: #FFFFFF;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-/* Estilo del botón al pasar el cursor */
-footer button:hover {
-  background-color: #A5511C;
-}
-
 
 /* Animation */
 
@@ -166,6 +136,7 @@ footer button:hover {
   }
 }
 /*Shrinking for mobile*/
+
 @media (max-width: 768px) {
   .waves {
     height:40px;
@@ -175,6 +146,25 @@ footer button:hover {
     height:30vh;
   }
   h1 {
-    font-size:24px;
+    font-size:28px;
   }
+
+  .inner-header {
+    flex-direction: column;  /* Cambia la dirección del flex a columna */
+    align-items: center;  /* Centra los elementos en el eje horizontal */
+  }
+
+  .logo-container {
+    padding-left: 0;  /* Elimina el padding izquierdo */
+    padding-bottom: 0;  /* Añade padding abajo para crear espacio entre el logo y el archivo Lottie */
+  }
+
+  .logo {
+    width: 40px;  /* Reduce el tamaño del logo */
+  }
+
+  .lottie-container {
+    padding-right: 28vh;  /* Elimina el padding izquierdo */
+  }
+
 }
